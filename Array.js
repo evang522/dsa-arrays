@@ -108,6 +108,14 @@ function main() {
   console.log(myArr);
 }
 
+// The array length is the actual amount of used spaces in the array. For example, in javascript, one could see these items visually in an array that is usable by the language. Even if the array items are empty. 
+
+// The array PTR is a signifier that allows us to see where the array STARTS in memory. Since the array is always contiguous, we understand that any location of any index of an array is simply the ptr + index;
+
+// The array capacity is the amount of space reserved in memory for the array. The array may or may not extend into all reserved space, but the reserved space in memory exists for it to grow into
+
+// When the PTR is moved, this happens because the array needs to be resized. When the array is resized, the entire array is copied and moved to another location in memory which has space for the entire array to exist contiguously. The PTR therefore is moved to another location
+
 
 main();
 
